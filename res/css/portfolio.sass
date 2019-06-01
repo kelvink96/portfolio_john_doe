@@ -1,0 +1,217 @@
+@import ../fonts/montserrat.css
+
+$black: #1e1e1e
+$dark-gray: #464646
+$light-gray: #949494
+$white: #f1f1f1
+
+// ==============
+// general styles
+// =============
+*
+  font-family: 'Montserrat'
+
+html, body
+  overflow-x: hidden
+  width: 100%
+  height: 100%
+  background-color: $black
+
+// =================
+// side-nav defaults
+// =================
+header, main, footer
+  padding-left: 0
+
+  @media only screen and (max-width: 480px)
+    header, main, footer
+      padding-left: 0
+
+// ========
+// side nav
+// ========
+.sidenav-trigger
+  padding: 1em
+  display: none
+  color: $white
+  font-size: 1.5em
+
+.sidenav
+  background-color: $dark-gray
+  width: 12%
+
+  //all <a> tags
+  a, i
+    color: $white !important
+
+    &:hover,
+    &:focus
+      background-color: $light-gray !important
+      transition: all ease-in-out 150ms
+
+
+  li
+    padding: .5em 0
+
+    &:first-of-type
+      line-height: 0
+      padding: 0
+
+    .avatar-container
+      background-color: $light-gray
+
+      .avatar
+        width: 200%
+        background-position: center
+        background-size: contain
+        margin-left: -50%
+
+
+// ============
+// body styling
+// ============
+.wrapper
+  width: 100%
+  color: $white
+
+  .main-content
+    p, h1, h2, h3, h4, h5, h6
+      padding: 0 1em 0 0
+
+    p:first-of-type,
+    h2:first-of-type
+      padding: 0
+
+    .portfolio-image
+      background-image: linear-gradient(180deg, rgba(30, 30, 30, 0), rgba(30, 30, 30, 1)), url("../images/portfolio-john doe.png")
+      background-size: cover
+      background-position: center
+      width: 100%
+      height: 100vh
+
+    .about
+      .divider
+        height: 4px
+        background-color: $white
+        width: 15%
+
+      //about me paragraph
+      p
+        color: $light-gray
+
+    .my-skill
+      .progress
+        width: 80%
+        height: 25px
+        background-color: $white
+
+        .determinate
+          background-color: $dark-gray
+
+      button
+        background-color: $white
+        color: $black
+
+        &:hover,
+        &:focus
+          background-color: $dark-gray
+          color: $white
+          transition: all ease-in-out 100ms
+
+    .my-price
+      padding: 0 10% 0 0
+
+      .card-panel
+        background-color: $white
+        margin: 0 auto
+        padding: 0
+
+        p, a, i, span, h1, h2, h3, h4, h5, h6
+          color: $black
+          border-bottom: 1px solid $light-gray
+          padding: 1em 0
+          font-weight: 500
+
+        h5
+          background-color: $dark-gray
+          color: $white
+
+        b
+          font-size: 1.5em
+          padding: 1em 0
+
+        button, a
+          background-color: $dark-gray
+          color: white
+          width: 30%
+          height: 40%
+          padding: .2em 1em
+
+          &:hover,
+          &:focus
+            background-color: $white
+            color: $dark-gray
+            font-weight: 500
+
+        //card hover
+        &:hover,
+        &:focus
+          background-color: $light-gray
+          transition: all ease-in-out 100ms
+
+    .my-photos
+      .divider
+        height: 4px
+        background-color: $white
+        width: 15%
+
+      .photo-grid
+        .column
+          float: left
+          width: 50%
+          padding: 1%
+
+          img
+            width: 100%
+            background-position: center
+            background-size: cover
+            margin-top: 5%
+
+            &:hover,
+            &:focus
+              border: 2px solid $white
+              transition: all ease-in-out 200ms
+
+    .contact-me
+      div
+        padding-left: 0
+
+      .divider
+        height: 4px
+        background-color: $white
+        width: 15%
+
+footer
+  padding-top: 0 !important
+  background-color: $dark-gray !important
+
+// =============
+// media queries
+// =============
+@media screen and (max-width: 993px)
+  .sidenav-trigger
+    display: block
+
+  .sidenav
+    width: 300px
+
+  //TODO subject to review
+  header, main, footer
+    padding-left: 0
+
+  .col .row
+    margin-right: 0
+
+    //main content title
+  h2, p
+    padding: 0 !important
