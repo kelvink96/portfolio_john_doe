@@ -18,7 +18,7 @@ header, main, footer {
   padding: 1em;
   display: none;
   color: #f1f1f1;
-  font-size: 1.5em; }
+  font-size: 3em; }
 
 .sidenav {
   background-color: #464646;
@@ -145,6 +145,9 @@ footer {
     margin-right: 0; }
 
   h2, p {
-    padding: 0 !important; } }
+    padding: 0 !important; }
+
+  .about p {
+    padding-right: 1em !important; } }
 
 /*# sourceMappingURL=portfolio.css.map */
