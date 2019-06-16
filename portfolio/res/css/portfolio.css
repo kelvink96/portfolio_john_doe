@@ -108,7 +108,8 @@ header, main, footer {
   .wrapper .main-content .my-photos .divider {
     height: 4px;
     background-color: #f1f1f1;
-    width: 15%; }
+    width: 15%;
+    margin-bottom: 1em; }
   .wrapper .main-content .my-photos .photo-grid .column {
     float: left;
     width: 50%;
