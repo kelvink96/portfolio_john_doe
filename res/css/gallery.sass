@@ -1,0 +1,28 @@
+@import theme
+
+html, body
+  overflow-x: auto
+  width: 100%
+  height: 100%
+  background-color: $black
+
+.wrapper
+  margin: 0 1%
+
+  .column
+    float: left
+    width: 25%
+
+    img
+      width: 100%
+      background-position: center
+      background-size: cover
+
+      &:hover,
+      &:focus
+          border: 2px solid $white
+          transition: all ease-in-out 200ms
+
+@media screen and (max-width: 481px)
+  .column
+    width: 100% !important
