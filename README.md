@@ -18,7 +18,6 @@ Vendor assets include: <br>
 **Fonts**
 * By Google Fonts -> Montserrat
 
-
 **Stock Images** <br>
 * Image assets have an <b>attribution</b> license, for this website I used them as placeholders for a 
 better look & feel, as well as user experience.
