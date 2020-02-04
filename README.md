@@ -16,7 +16,8 @@ Vendor assets include: <br>
 * font-awesome v5.11.2 (all.min.css)
 
 **Fonts**
-* By Google Fonts -> Raleway
+* By Google Fonts -> Montserrat
+
 
 **Stock Images** <br>
 * Image assets have an <b>attribution</b> license, for this website I used them as placeholders for a 
