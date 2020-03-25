@@ -1,5 +1,7 @@
 # porfolio_john_doe
 
+![alt text](screenshots/john_doe_portfolio.jpg)
+
 porfolio_john_doe is a designer portfolio, website template built on materialize-css.
 
 Vendor assets include: <br>
